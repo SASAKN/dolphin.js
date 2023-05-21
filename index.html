@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <link rel="stylesheet" href="css/load.css">
+  <meta charset="UTF-8">
+  <title>Dolphin</title>
+  <script src="js/load.js"></script>
+  <script src="js/sikake.js"></script>
+  <script src="js/cheak.js"></script>
+  <script src="js/conmenu.js"></script>
+  <script src="js/onsei.js"></script>
+  <script src="js/mod.js"></script><!--プログラムは、ここで書く。-->
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/icon.css">
+  <script src="js/animation.js"></script>
+  <script src="js/exit.js"></script>
+  <link rel="stylesheet" href="css/background.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="js/redeirect.js"></script>
+</head>
+
+<body oncontextmenu="return false;">
+  <div class="drag-and-drop">
+    <div id="kairu">
+      <div class='arrow_box'><span class="formtitle">何について調べますか？</span>
+        <form action="https://google.com/search" method="get" name="kairi_form" target="_blank">
+          <textarea type="text" name="q" class="text_search" id="recordtext" value="" cols="24" rows="2"
+            spellcheck="false" data-ms-editor="true" onclick="katakata()"></textarea>
+          <input type="submit" value="検索" onclick="musicstart(); return check(); " class="btn_search" alt="検索"
+            id="searchs">
+          <input type="button" value="音声認識" onclick="record();" class="btn">
+
+        </form>
+        <br>
+        <section id="speech">
+          <div id="outbox">
+            カイル君です。
+            <br>ご用件は、なんでしょう？
+          </div>
+        </section>
+      </div>
+      <br>
+
+      <div id="kyleimagevideo">
+        <img src="./kyle.png" alt="カイル君の画像" id="rightclick" class="image_kyle animk" width="500"
+          oncontextmenu="var a = new Audio('menu.mp3'); a.play();" ondrag="return false;">
+      </div>
+    </div>
+    <div id="conmenu">
+      <ul>
+        <li class="list-group-item" onclick="anime()">アニメーション</li>
+        <li class="list-group-item" onclick="oyogu()">泳がせる</li>
+      </ul>
+    </div>
+    <div id="screen">
+
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+      <h1 class="load">LOADING...</h1>
+    </div>
+    <div class="hide" id="menu">
+
+</body>
+
+</html>
