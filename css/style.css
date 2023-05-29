@@ -1,13 +1,13 @@
 body {
-  -webkit-app-region: drag;
-  -webkit-user-select: none;
+  -webkit-app-region: none;
   background: rgba(0, 0, 0, 0);
 }
 .image_kyle {
   width: 100px;
+  zoom: 2;
   height: 100px;
-  margin-left: 120px;
-  transform: rotate(1deg);
+  margin-left: 27px;
+  transform: translateY(-37px);
 }
 .image_kyle{
   animation: anim 0.35s reverse;
