@@ -2,4 +2,10 @@
     body{
         background: black !important;
     }
+    .arrow_box{
+        zoom: 3;
+    }
+    #kyleimagevideo{
+        zoom: 3;
+    }
 } 
