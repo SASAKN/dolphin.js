@@ -12,9 +12,6 @@ body {
 .image_kyle{
   animation: anim 0.35s reverse;
 }
-.image_kyle:hover{
-  animation: anims 0.3s reverse;
-}
 
 @keyframes anim {
   0% {
