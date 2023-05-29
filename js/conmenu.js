@@ -2,7 +2,7 @@ window.onload = function () {
     let con = document.getElementById('conmenu');  
     let rightclick = document.getElementById('rightclick');     
     let body = document.body;                       
-    rightclick.addEventListener('contextmenu', function (e) {
+    rightclick.addEventListener('click', function (e) {
       con.style.left = e.pageX + 'px';
       con.style.top = e.pageY + 'px';
       con.classList.add('show');
