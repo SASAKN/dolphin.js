@@ -197,7 +197,7 @@ function anime() {
                                                                   play2.play();
                                                                   setTimeout(finanim, 35000);
                                                                   function finanim() {
-                                                                    document.getElementById('kyleimagevideo').innerHTML = '<img src="./kyle.png" alt="カイル君の画像" id="rightclick" class="image_kyle animk" width="500">';
+                                                                    document.getElementById('kyleimagevideo').innerHTML = '          <video muted control="false" autoplay loop class="image_kyle animk" id="rightclick">            <source src="./dolphin.webm" type="video/webm" />          </video>';
                                                                   }
                                                                 }
                                                               }
@@ -217,7 +217,6 @@ function anime() {
                                   }
                                 }
                               }
-
                             }
                           }
                         }
