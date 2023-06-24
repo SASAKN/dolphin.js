@@ -1,9 +1,8 @@
 //アニメーションのテンプレート
-var element = document.getElementById('kyleimagevideo');
-
 function template(i) {
   return `<img src="${animations[i].gif}" class="${animations[i].class}">`;
 }
+var element;
 var audio = [];
 var duration = [];
 var cls = [];
@@ -52,8 +51,16 @@ window.onload = function () {
     duration.push(a.duration);
     cls.push(a.class);
     gif.push(a.gif);
+    element = document.getElementById('kyleimagevideo');
   }
 };
-function playAnimations(i){
-  template
-}
+
+function playAnimations(i) {
+  if (i < animations.length){
+    element.innerHTML = template(i);
+    audio[i].play();
+    setTimeout(function () {
+      playAnimations(i+1);
+    }, duration[i]);
+  }
+};
