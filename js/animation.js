@@ -1,12 +1,9 @@
 //アニメーションのテンプレート
 function template(i) {
-  return `<img src="${animations[i].gif}" class="${animations[i].class}">`;
+  return `<img src="${animations[i].gif}" class="${animations[i].class}">  <audio src="${animations[i].audio}" autoplay >`;
 }
 var element;
 var audio = [];
-var duration = [];
-var cls = [];
-var gif = [];
 //アニメーションの配列
 var animations = [
   { gif: 'anime/1/1.gif', audio: 'anime/1/1.mp3', duration: 5000, class: 'anim1' },
@@ -48,9 +45,6 @@ function setupAnimations() {
   for (var i = 0; i < animations.length; i++) {
     var a = animations[i];
     audio.push(new Audio(a.audio));
-    duration.push(a.duration);
-    cls.push(a.class);
-    gif.push(a.gif);
     element = document.getElementById('kyleimagevideo');
   }
 };
@@ -58,9 +52,9 @@ function setupAnimations() {
 function playAnimations(i) {
   if (i < animations.length){
     element.innerHTML = template(i);
-    audio[i].play();
+    // audio[i].play();
     setTimeout(function () {
       playAnimations(i+1);
-    }, duration[i]);
+    }, animations[i].duration);
   }
 };
