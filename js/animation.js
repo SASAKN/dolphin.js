@@ -1,6 +1,6 @@
 //アニメーションのテンプレート
 function template(i) {
-  return `<img src="${animations[i].gif}" class="${animations[i].class}">  <audio src="${animations[i].audio}" autoplay >`;
+  return `<img src="${animations[i].gif}" class="${animations[i].class}"> `;
 }
 var element;
 var audio = [];
@@ -52,7 +52,7 @@ function setupAnimations() {
 function playAnimations(i) {
   if (i < animations.length){
     element.innerHTML = template(i);
-    // audio[i].play();
+    audio[i].play();
     setTimeout(function () {
       playAnimations(i+1);
     }, animations[i].duration);
