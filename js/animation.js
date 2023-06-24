@@ -4,7 +4,6 @@ function template(i) {
 }
 var element;
 var audio = [];
-var cls = [];
 var gif = [];
 //アニメーションの配列
 var animations = [
@@ -47,8 +46,6 @@ function setupAnimations() {
   for (var i = 0; i < animations.length; i++) {
     var a = animations[i];
     audio.push(new Audio(a.audio));
-    duration.push(a.duration);
-    cls.push(a.class);
     gif.push(a.gif);
     element = document.getElementById('kyleimagevideo');
   }
