@@ -44,7 +44,7 @@ var animations = [
   { gif: 'anime/33/33.gif', audio: 'anime/33/33.mp3', duration: 35000, class: 'anim12' }
 ];
 
-window.onload = function () {
+function setupAnimations() {
   for (var i = 0; i < animations.length; i++) {
     var a = animations[i];
     audio.push(new Audio(a.audio));
