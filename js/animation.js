@@ -4,7 +4,6 @@ function template(i) {
 }
 var element;
 var audio = [];
-var duration = [];
 var cls = [];
 var gif = [];
 //アニメーションの配列
