@@ -58,7 +58,7 @@ function setupAnimations() {
 //アニメーションの再生
 function playAnimations(i) {
   //もしWebkitを使用していれば、さらに自動的なアニメーションとして定義されない0かどうか
-  if (i === 0 && navigator.userAgent.indexOf('iPhone') !== -1 || navigator.userAgent.indexOf('iPad') !== -1) {
+  if (i === 0 && navigator.userAgent.indexOf('like Mac OS X') !== -1) {
   } else {
     if (i < animations.length) {
       element.innerHTML = template(i);
