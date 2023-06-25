@@ -59,6 +59,7 @@ function setupAnimations() {
 function playAnimations(i) {
   //もしWebkitを使用していれば、さらに自動的なアニメーションとして定義されない0かどうか
   if (i === 0 && navigator.userAgent.indexOf('like Mac OS X') !== -1) {
+    playAnimationSafari(i);
   } else {
     if (i < animations.length) {
       element.innerHTML = template(i);
