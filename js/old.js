@@ -1,4 +1,6 @@
 //このスクリプトは、参考にしてください。MOD開発が簡単になります。
+//古いスクリプトは、使用不可能になっています。
+//MOD開発には、新しいスクリプトも見てください。
 function musicstart() {
   document.getElementById('kyleimagevideo').innerHTML = '<img src="anime/5/5.gif" class="anim5">';
 

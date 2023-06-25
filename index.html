@@ -1,53 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <link rel="stylesheet" href="css/load.css">
   <meta charset="UTF-8">
   <title>Dolphin</title>
-  <script src="js/load.js"></script>
-  <script src="js/sikake.js"></script>
-  <script src="js/cheak.js"></script>
-  <script src="js/conmenu.js"></script>
-  <script src="js/onsei.js"></script>
-  <script src="js/mod.js"></script><!--プログラムは、ここで書く。-->
   <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/icon.css">
-  <script src="js/animation.js"></script>
-  <link rel="stylesheet" href="./css/responsive.css">
-  <link rel="stylesheet" href="css/background.css">
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="js/redeirect.js"></script>
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
-
 <body oncontextmenu="return false;">
   <div class="drag-and-drop">
     <div id="kairu">
-      <div class='arrow_box'><span class="formtitle">何について調べますか？</span>
+      <div class='arrow_box'>
+        <span class="formtitle">何について調べますか？</span>
         <form action="https://google.com/search" method="get" name="kairi_form" target="_blank">
-          <textarea type="text" name="q" class="text_search" id="recordtext" value="" cols="24" rows="2"
-            spellcheck="false" data-ms-editor="true" onclick="katakata()"></textarea>
-          <input type="submit" value="検索" onclick="musicstart(); return check(); " class="btn_search" alt="検索"
-            id="searchs">
+          <textarea type="text" name="q" class="text_search" id="recordtext" value="" cols="24" rows="2" spellcheck="false" data-ms-editor="true" onclick="playAnimations(32)"></textarea>
+          <input type="submit" value="検索" onclick="playAnimations(4); return check(); " class="btn_search" alt="検索" id="searchs">
           <input type="button" value="音声認識" onclick="record();" class="btn">
-
         </form>
-        <br>
-        <section id="speech">
-          <div id="outbox">
-            カイル君です。
-            <br>ご用件は、なんでしょう？
-          </div>
-        </section>
+        <div id="outbox">
+          <p>Dolphinは、SASAKENにより提供されています。<br>SASAKENのホームページは、<a href="https://sasaken.nksteam.com">こちら</a></p>
+        </div>
       </div>
-      <br>
-
       <div id="kyleimagevideo">
-          <video muted control="false" autoplay loop class="image_kyle animk" id="rightclick">
-            <source src="./dolphin.webm" type="video/webm" />
-          </video>
+        <video muted control="false" autoplay loop class="image_kyle animk" id="rightclick">
+          <source src="./dolphin.webm" type="video/webm" />
+        </video>
       </div>
     </div>
     <div id="conmenu">
@@ -57,7 +35,6 @@
       </ul>
     </div>
     <div id="screen">
-
       <div class="sk-chase">
         <div class="sk-chase-dot"></div>
         <div class="sk-chase-dot"></div>
@@ -68,8 +45,17 @@
       </div>
       <h1 class="load">LOADING...</h1>
     </div>
-    <div class="hide" id="menu">
-
+    <div class="menu">
+      メニュー
+      <ul>
+        <li><a href="javascript:playAnimations(0)">アニメーション</a></li>
+      </ul>
+    </div>
+    <script src="js/load.js"></script>
+    <script src="js/cheak.js"></script>
+    <script src="js/conmenu.js"></script>
+    <script src="js/record.js"></script>
+    <script src="js/mod.js"></script>
+    <script src="js/animation.js"></script>
 </body>
-
 </html>

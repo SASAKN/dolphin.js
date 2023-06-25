@@ -1,9 +1,9 @@
-function fini() {
-
-        
+setTimeout(function () {
         const spinner = document.getElementById('screen');
         spinner.classList.add('loaded');
-        var a = new Audio('../start.wav');
-        a.play();
+}, 5000);
+//読み込みされたら、動くべき関数
+window.onload = function () {
+        setupAnimations();
+        setupMenu();
 }
-setTimeout(fini,5000);

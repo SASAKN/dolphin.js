@@ -1,4 +1,6 @@
 function setupMenu(){
+  if (navigator.userAgent.indexOf('like Mac OS X') !== -1) {
+  }
   let con = document.getElementById('conmenu');  
   let rightclick = document.getElementById('rightclick');     
   let body = document.body;                    
@@ -12,8 +14,4 @@ function setupMenu(){
       con.classList.remove('show');
     }
   });
-}
-window.onload = function(){
-  setupAnimations();
-  setupMenu();
 }
