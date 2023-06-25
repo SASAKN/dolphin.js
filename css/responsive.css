@@ -8,4 +8,7 @@
     #kyleimagevideo{
         zoom: 3;
     }
+    #conmenu{
+        display: none !important;
+    }
 } 
