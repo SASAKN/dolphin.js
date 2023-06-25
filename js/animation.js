@@ -1,9 +1,12 @@
 //アニメーションのテンプレート
 function template(i) {
-  return `<img src="${animations[i].gif}" class="${animations[i].class}">  <audio src="${animations[i].audio}" autoplay >`;
+  return `<img src="${animations[i].gif}" class="${animations[i].class}"> `;
 }
+
+//変数の設定
 var element;
 var audio = [];
+
 //アニメーションの配列
 var animations = [
   { gif: 'anime/1/1.gif', audio: 'anime/1/1.mp3', duration: 5000, class: 'anim1' },
@@ -41,6 +44,7 @@ var animations = [
   { gif: 'anime/33/33.gif', audio: 'anime/33/33.mp3', duration: 35000, class: 'anim12' }
 ];
 
+//アニメーションのセットアップ
 function setupAnimations() {
   for (var i = 0; i < animations.length; i++) {
     var a = animations[i];
@@ -49,10 +53,11 @@ function setupAnimations() {
   }
 };
 
+//アニメーションの再生
 function playAnimations(i) {
   if (i < animations.length){
     element.innerHTML = template(i);
-    // audio[i].play();
+    audio[i].play();
     setTimeout(function () {
       playAnimations(i+1);
     }, animations[i].duration);
