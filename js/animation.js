@@ -36,7 +36,7 @@ var animations = [
   { gif: 'anime/25/25.gif', audio: 'anime/25/25.mp3', duration: 5000, class: 'anim25' },
   { gif: 'anime/26/26.gif', audio: 'anime/26/26.mp3', duration: 9000, class: 'anim26' },
   { gif: 'anime/27/27.gif', audio: 'anime/27/27.mp3', duration: 11000, class: 'anim27' },
-  { gif: 'anime/28/28.gif', audio: 'anime/28/28.mp3', duration: 5000, class: 'anim28' },
+  { gif: 'anime/28/28.gif', audio: 'anime/28/28.mp3', duration: 28000, class: 'anim28' },
   { gif: 'anime/29/29.gif', audio: 'anime/29/29.mp3', duration: 30000, class: 'anim29' },
   { gif: 'anime/30/30si.gif', audio: 'anime/30/30.mp3', duration: 10000, class: 'anim20' },
   { gif: 'anime/31/31.gif', audio: 'anime/31/31.mp3', duration: 30000, class: 'anim31' },

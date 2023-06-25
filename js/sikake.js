@@ -6,12 +6,6 @@ function musicstart() {
     play2.play();
   
   }
-  function oregakesu() {
-    document.write('<img src="anime/bukkowasu.jpg" alt="今度は、俺が消します。"><img src="anime/bukkowasu.png" alt="今度は、俺が消します。">');
-    
-    var play1 = new Audio ('anime/bukkowasu.mp3');
-    play1.play();
-  }
   function katakata() {
     document.getElementById('kyleimagevideo').innerHTML = '<img src="anime/33/33.gif" class="anim33">';
   
