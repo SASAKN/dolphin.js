@@ -61,7 +61,6 @@ function playAnimations(i) {
     audio[i].play();
     setTimeout(function () {
       playAnimations(i+1);
-      audio[i].pause();
     }, animations[i].duration);
   }
 };
