@@ -2,8 +2,7 @@ function check() {
   var string = document.getElementById('recordtext').value;
   
   if (string.indexOf('SASAKEN') > -1 && string.indexOf('Homepage') > -1 || string.indexOf('Portfolio')) {
-    const output = '<iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=35.689487&lon=139.691706&name=Tokyo&units=si"></iframe>';
-    document.getElementById("outbox").innerHTML = output;
+    location.href = 'https://sasaken.nksteam.com';
     return false;
   } 
   
