@@ -12,6 +12,6 @@
         display: none !important;
     }
     .menu{
-        display: block;
+        display: block !important;
     }
 } 
