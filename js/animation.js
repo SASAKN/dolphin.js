@@ -6,6 +6,7 @@ function template(i) {
 //変数の設定
 var element;
 var audio = [];
+var currentAudio;
 
 //アニメーションの配列
 var animations = [
@@ -60,6 +61,7 @@ function playAnimations(i) {
     audio[i].play();
     setTimeout(function () {
       playAnimations(i+1);
+      audio[i].pause();
     }, animations[i].duration);
   }
 };
