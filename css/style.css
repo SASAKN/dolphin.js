@@ -15,7 +15,6 @@ body {
 
 @keyframes anim {
   0% {
-    transform: translateX(0px);
     transform: translateY(0px);
   }
 

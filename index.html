@@ -11,17 +11,16 @@
 <body oncontextmenu="return false;">
   <div class="drag-and-drop">
     <div id="kairu">
-      <div class='arrow_box'><span class="formtitle">何について調べますか？</span>
+      <div class='arrow_box'>
+        <span class="formtitle">何について調べますか？</span>
         <form action="https://google.com/search" method="get" name="kairi_form" target="_blank">
           <textarea type="text" name="q" class="text_search" id="recordtext" value="" cols="24" rows="2" spellcheck="false" data-ms-editor="true" onclick="katakata()"></textarea>
           <input type="submit" value="検索" onclick="musicstart(); return check(); " class="btn_search" alt="検索" id="searchs">
           <input type="button" value="音声認識" onclick="record();" class="btn">
         </form>
-        <section id="speech">
-          <div id="outbox">
-            <p>Dolphinは、SASAKENにより提供されています。<br>SASAKENのホームページは、<a href="https://sasaken.nksteam.com">こちら</a></p>
-          </div>
-        </section>
+        <div id="outbox">
+          <p>Dolphinは、SASAKENにより提供されています。<br>SASAKENのホームページは、<a href="https://sasaken.nksteam.com">こちら</a></p>
+        </div>
       </div>
       <div id="kyleimagevideo">
         <video muted control="false" autoplay loop class="image_kyle animk" id="rightclick">
@@ -46,7 +45,6 @@
       </div>
       <h1 class="load">LOADING...</h1>
     </div>
-    <div class="hide" id="menu">
     <script src="js/load.js"></script>
     <script src="js/sikake.js"></script>
     <script src="js/cheak.js"></script>
