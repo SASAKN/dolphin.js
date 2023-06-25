@@ -2,7 +2,9 @@ body {
   -webkit-app-region: none;
   background: rgba(0, 0, 0, 0);
 }
-
+.menu{
+  display: none;
+}
 .image_kyle {
   width: 100px;
   zoom: 2;

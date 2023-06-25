@@ -11,4 +11,7 @@
     #conmenu{
         display: none !important;
     }
+    .menu{
+        display: block;
+    }
 } 
