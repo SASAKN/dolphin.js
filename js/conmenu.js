@@ -13,8 +13,3 @@ function setupMenu(){
     }
   });
 }
-//読み込みされたら、音の読み込み
-window.onload = function(){
-  setupAnimations();
-  setupMenu();
-}
