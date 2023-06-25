@@ -57,7 +57,7 @@ function setupAnimations() {
 
 //アニメーションの再生
 function playAnimations(i) {
-  //もしWebkitを使用していれば
+  //もしWebkitを使用していれば、さらに自動的なアニメーションとして定義されない0かどうか
   if (navigator.userAgent.indexOf('Safari') && i === 0) {
     playAnimationSafari(i);
     alert('redirect function');
