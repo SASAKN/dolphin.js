@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/icon.css">
-  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/background.css">
 
 </head>
@@ -27,21 +27,16 @@
         <form action="https://google.com/search" method="get" name="kairi_form" target="_blank">
           <textarea type="text" name="q" class="text_search" id="recordtext" value="" cols="24" rows="2"
             spellcheck="false" data-ms-editor="true" onclick="katakata()"></textarea>
-          <input type="submit" value="検索" onclick="musicstart(); return check(); " class="btn_search" alt="検索"
-            id="searchs">
+          <input type="submit" value="検索" onclick="musicstart(); return check(); " class="btn_search" alt="検索" id="searchs">
           <input type="button" value="音声認識" onclick="record();" class="btn">
-
         </form>
         <br>
         <section id="speech">
           <div id="outbox">
-            カイル君です。
-            <br>ご用件は、なんでしょう？
+            <p>カイルは、SASAKENにより提供されています。<br>SASAKENのホームページは、<a href="https://sasaken.nksteam.com">こちら</a></p>
           </div>
         </section>
       </div>
-      <br>
-
       <div id="kyleimagevideo">
           <video muted control="false" autoplay loop class="image_kyle animk" id="rightclick">
             <source src="./dolphin.webm" type="video/webm" />
@@ -55,7 +50,6 @@
       </ul>
     </div>
     <div id="screen">
-
       <div class="sk-chase">
         <div class="sk-chase-dot"></div>
         <div class="sk-chase-dot"></div>
@@ -67,7 +61,5 @@
       <h1 class="load">LOADING...</h1>
     </div>
     <div class="hide" id="menu">
-
 </body>
-
 </html>
