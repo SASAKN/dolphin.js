@@ -6,6 +6,7 @@ function template(i) {
 //変数の設定
 var element;
 var audio = [];
+var safariaudio;
 
 //アニメーションの配列
 var animations = [
@@ -49,17 +50,34 @@ function setupAnimations() {
   for (var i = 0; i < animations.length; i++) {
     var a = animations[i];
     audio.push(new Audio(a.audio));
+    safariaudio = new Audio('anime/safari.mp3');
     element = document.getElementById('kyleimagevideo');
   }
 };
 
 //アニメーションの再生
 function playAnimations(i) {
-  if (i < animations.length){
-    element.innerHTML = template(i);
-    audio[i].play();
-    setTimeout(function () {
-      playAnimations(i+1);
-    }, animations[i].duration);
+  if (navigator.userAgent.indexOf('iPhone')) {
+    playAnimationSafari(i);
+  } else {
+    if (i < animations.length) {
+      element.innerHTML = template(i);
+      audio[i].play();
+      setTimeout(function () {
+        playAnimations(i + 1);
+      }, animations[i].duration);
+    }
   }
 };
+
+//Safariの場合
+function playAnimationSafari() {
+  if (i < animations.length) {
+    element.innerHTML = template(i);
+    safariaudio.play();
+    setTimeout(function () {
+      safariaudio.pause();
+      playAnimations(i + 1);
+    }, animations[i].duration);
+  }
+}
