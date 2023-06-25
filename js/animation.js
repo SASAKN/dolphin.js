@@ -71,7 +71,7 @@ function playAnimations(i) {
 };
 
 //Safariの場合
-function playAnimationSafari() {
+function playAnimationSafari(i) {
   if (i < animations.length) {
     element.innerHTML = template(i);
     safariaudio.play();
@@ -80,4 +80,4 @@ function playAnimationSafari() {
       playAnimations(i + 1);
     }, animations[i].duration);
   }
-}
+};
