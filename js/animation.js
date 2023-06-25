@@ -57,8 +57,10 @@ function setupAnimations() {
 
 //アニメーションの再生
 function playAnimations(i) {
-  if (navigator.userAgent.indexOf('iPhone')) {
+  //もしWebkitを使用していれば
+  if (navigator.userAgent.indexOf('Safari') && i === 0) {
     playAnimationSafari(i);
+    alert('redirect function');
   } else {
     if (i < animations.length) {
       element.innerHTML = template(i);
