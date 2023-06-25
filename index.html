@@ -14,8 +14,8 @@
       <div class='arrow_box'>
         <span class="formtitle">何について調べますか？</span>
         <form action="https://google.com/search" method="get" name="kairi_form" target="_blank">
-          <textarea type="text" name="q" class="text_search" id="recordtext" value="" cols="24" rows="2" spellcheck="false" data-ms-editor="true" onclick="katakata()"></textarea>
-          <input type="submit" value="検索" onclick="musicstart(); return check(); " class="btn_search" alt="検索" id="searchs">
+          <textarea type="text" name="q" class="text_search" id="recordtext" value="" cols="24" rows="2" spellcheck="false" data-ms-editor="true" onclick="playAnimations(32)"></textarea>
+          <input type="submit" value="検索" onclick="playAnimations(4); return check(); " class="btn_search" alt="検索" id="searchs">
           <input type="button" value="音声認識" onclick="record();" class="btn">
         </form>
         <div id="outbox">
