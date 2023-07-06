@@ -77,7 +77,6 @@ function playAnimationSafari(i) {
     element.innerHTML = template(i);
     safariaudio.play();
     setTimeout(function () {
-      safariaudio.pause();
       playAnimations(i + 1);
     }, animations[i].duration);
   }

@@ -5,42 +5,7 @@ body {
 .menu{
   display: none;
 }
-.menu{
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgb(203, 203, 203);
-  width: 100vw;
-  color: rgb(54, 54, 54);
-  text-align: center;
-  font-size: 3em;
-  height: 100vh;
-}
-li{
-  position: fixed;
-  top: 60px;
-  border-radius: 10px;
-  left: 0;
-  width: 100vw;
-  margin-top: 20px;
-  padding-top: 20px;
-  height: 10vh;
-  background-color: rgb(255, 236, 94);
-}
-li a{
-  display: block;
-}
-li a{
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-} 
-li a:visited{
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-li{
-  list-style: none;
-}
+
 .image_kyle {
   width: 100px;
   zoom: 2;
