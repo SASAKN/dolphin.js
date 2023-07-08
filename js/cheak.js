@@ -1,6 +1,6 @@
+//ここには、チェック関数があり、これを改造することによって、Google検索を行わずに個別の処理を行わないことができます。
 function check() {
   var string = document.getElementById('recordtext').value;
-  
   if (string.indexOf('札幌') > -1 && string.indexOf('天気') > -1) {
     const output = '<iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=43.062689&lon=141.352887&name=Sapporo&units=si"></iframe>';
     document.getElementById("outbox").innerHTML = output;
